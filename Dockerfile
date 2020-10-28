@@ -6,6 +6,6 @@ RUN chmod +x /tini
 ENTRYPOINT ["/tini", "--"]
 
 COPY /.  .
-RUN npm install
+npm install -g npm@7.0.6
 
 CMD ["node","app.js"]
